@@ -1,0 +1,12 @@
+.flx{
+    display: flex;
+}
+.col{
+    flex-direction: column;
+}
+.sb{
+    justify-content: space-between;
+}
+.aic{
+    align-items: center;
+}
