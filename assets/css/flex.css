@@ -7,6 +7,19 @@
 .sb{
     justify-content: space-between;
 }
+.sa{
+    justify-content: space-around;
+}
 .aic{
     align-items: center;
+}
+.jcc{
+    justify-content: center;
+}
+
+
+
+/* test */
+.g10{
+    /* gap: 10px; */
 }

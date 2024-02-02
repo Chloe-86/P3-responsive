@@ -1,9 +1,9 @@
 @import url('../css/generic.css');
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
 
 
-
+/* ce qui corresponds ci dessous au mobile first*/
 
 
 p.logo{
@@ -47,13 +47,22 @@ p.logo{
     }
 
 /* ****************************************************************Fonctionnement************************************************************************ */
-section.fonctioning{
-    margin: 3rem 0 4.25rem 0;
+
+.wrapper-func{
     display: flex;
     justify-content: center;
     flex-direction: column; 
-    padding: 2.03rem;
     gap: 1.56rem;
+    
+}
+
+section.fonctioning{
+    margin: 3rem 0 4.25rem 0;
+    padding: 2.03rem;
+
+    h2{
+        margin-bottom: 2.03rem;
+    }
         
     .wrapper{
         position: relative;
@@ -85,10 +94,6 @@ section.fonctioning{
     padding: 1.06rem;
     margin-bottom: 4.13rem;
 
-    
-    
-   
-   
     h2{
         padding-bottom: 1rem ;
         font-size: 1.5rem;

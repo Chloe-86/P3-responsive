@@ -19,7 +19,7 @@
     max-width: 1440px;
     box-sizing: border-box;
     width: 100%;
-   
+    margin: 0 auto;
 }
 
 a {
@@ -28,8 +28,6 @@ a {
 }
 
 body {
-    display: flex;
-    justify-content: center;
     font-family: 'Roboto';
 }
 
@@ -49,3 +47,9 @@ button{
     border-radius: 1.56rem;
     border: none;
 }
+@media (max-width: 767.98px) { 
+        body{
+            min-width: 320px;
+        }
+
+} 
