@@ -5,7 +5,8 @@
   .wrapper-func{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: unset;
+   
   }
 
   body > div > main > section.restaurants > div{
@@ -26,5 +27,44 @@
     padding: 0.94rem 10% 0!important;
     margin: 258px 15% 0 !important;
   }
-
+  .wrapper{
+    width: 322.486px;
+    
+  }
+  .wrapper-func{
+    gap: 37px!important;
+  }
+  .fonctioning{
+    padding: 1.03rem 11.25rem!important;
+  }
+  .restaurants{
+    padding: 1.88rem 11.25rem;
+  }
+  .footer{
+    display: flex;
+  }
+  body > div > footer > div{
+    flex-direction: row!important;
+  }
+  .footer{
+    flex-direction: row-reverse;
+    .txt{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .txt img{
+      width: 0.88rem!important;
+      
+    }
+    .txt > div:nth-child(2) > p{
+      width: 10.5rem!important;
+    }
+    .txt > p:nth-child(4){
+      width: 8.12rem!important;
+    }
+    p.logo{
+      padding-right: 0.8863rem;
+    }
+  }
 } 
