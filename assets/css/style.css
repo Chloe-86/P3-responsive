@@ -156,15 +156,6 @@ section.fonctioning{
        
     }
 }
-.hiddenbutton{
-    display: none;
-}
-
-.hiddenbutton:checked + .svgheart svg path {
-    fill: white; 
-    stroke: black; 
-    stroke-width: 0.5; 
-  }
 /* ****************************************************************footer************************************************************************ */
 
 .footer{
@@ -188,3 +179,4 @@ section.fonctioning{
         }
     }
 }
+

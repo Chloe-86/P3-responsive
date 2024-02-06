@@ -15,6 +15,7 @@
     --shri: 'Shrikhand', cursive;
     --green:#008766;
     --green-bg: #99E2D0;
+    
 }
 
 .main-container {
@@ -43,12 +44,20 @@ p{
     font-weight: 300;
 }
 button{
-    background: var(--Button-Gradient, linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%));
+    background: linear-gradient(360deg, #9356DC -5.2%, #FF79DA 110.74%);
     color: white;
     padding: 0.81rem 1.17rem;
     border-radius: 1.56rem;
     border: none;
 }
+
+
+button:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(360deg, #9356DC -31.44%, #FF79DA 95.93%, #fff);
+}
+
+
 @media (max-width: 767.98px) { 
         body{
             min-width: 320px;
