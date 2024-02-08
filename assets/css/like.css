@@ -1,6 +1,6 @@
 .heart-anim {
-    /* position: relative;
-    z-index: 100; */
+    position: relative;
+    z-index: 100;
 } 
 
 #logo-anim {
@@ -49,4 +49,18 @@
         stroke-dashoffset: 100;
         stroke: rgb(255, 255, 255);
     }
+}
+
+/* input checked like */
+.hideButton{
+    display: none;
+}
+.hideButton:checked + .heartSvg svg path {
+    fill: white; 
+    stroke: black; 
+    stroke-width: 0.5; 
+    
+  }
+.heartSvg{
+    cursor: pointer;
 }

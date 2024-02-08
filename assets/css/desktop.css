@@ -1,12 +1,11 @@
 @import url('../css/generic.css');
 
-@media (min-width: 768px) { 
+@media (min-width: 1024px) { 
 
   .wrapper-func{
     display: flex;
     flex-direction: row;
     justify-content: unset;
-   
   }
 
   body > div > main > section.restaurants > div{
@@ -17,12 +16,12 @@
 
   .bg-menu{
     /* height: 383px; */
-
   }
 
   .menu{
     padding: 0.94rem 10% 0!important;
-    margin: 258px 15% 0 !important;
+    max-width: 1055px;
+    margin: 0 auto;
   }
   .wrapper{
     width: 322.486px;

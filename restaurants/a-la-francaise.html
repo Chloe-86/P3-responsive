@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/anim.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/menu.css">
     <link rel="stylesheet" href="../assets/css/flex.css">
+    <link rel="stylesheet" href="../assets/css/desktop.css">
+    <link rel="stylesheet" href="../assets/css/like.css">
 </head>
 <body>
     <div class="main-container">
@@ -25,7 +28,21 @@
         </header> 
         <main>
             <section class="menu">
-                <h2>à la francaise</h2>
+                <div class="menu-title">
+                    <h2>À la francaise</h2>
+                    <input type="checkbox" id="heartButton" class="hideButton" checked>
+                    <label class="heartSvg" for="heartButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 -5 22 30" fill="none">
+                            <path d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z" fill="url(#paint0_linear_178263_527)"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_178263_527" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#9356DC"/>
+                                <stop offset="1" stop-color="#FF79DA"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                    </label>
+                 </div>
                     <div class="anim-block">
                         <div class="description">
                             <h3>Entrées</h3>
@@ -34,7 +51,7 @@
                         <div class="menu-card">
                                 <div class="menu-wrapper flx sb">
                                     <div class="entry-wrapper ">
-                                        <h4>tartare de poulpe acidulé</h4>
+                                        <h4>Tartare de poulpe acidulé</h4>
                                         <p>Aux zestes d'orange</p>
                                     </div>
                                     <div class="price flx sb">
@@ -93,7 +110,7 @@
                                     <div class="menu-wrapper flx sb">
                                         <div class="entry-wrapper ">
                                             <h4>Pigeonneau d'Ile-et-Vilaine</h4>
-                                            <p>sur son lit de gnocchis aux légumes</p>
+                                            <p>Sur son lit de gnocchis aux légumes</p>
                                         </div>
                                         <div class="price flx sb">
                                             <p>44 €</p>
@@ -111,7 +128,7 @@
                                     <div class="menu-wrapper flx sb">
                                         <div class="entry-wrapper ">
                                             <h4>Pétales de violettes glacés</h4>
-                                            <p>et purée de noisettes</p>
+                                            <p>Et purée de noisettes</p>
                                         </div>
                                         <div class="price flx sb">
                                             <p>18 €</p>

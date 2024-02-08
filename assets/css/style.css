@@ -73,8 +73,13 @@ section.fonctioning{
         gap: 1.69rem;
         padding: 1.79rem 1.76rem ;
         box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
-        font-weight: 500;
+       
+        p{
+            text-wrap: nowrap;
+            font-weight: 500;
+        }
     }
+    
     .circle{
         position: absolute;
         left: 0%;
@@ -114,6 +119,8 @@ section.fonctioning{
         .card-wrapper{
             background-color: var(--main-bg);
             position: relative;
+            border-radius: 0.9375rem;
+            
             .under-wrapper{
                 display: flex;
                 justify-content: space-between;
@@ -137,7 +144,7 @@ section.fonctioning{
                 font-family: 'Roboto';
             }
             img{
-                height: 14.43rem;
+                height: 10rem;
                 width: 100%;
                 object-fit: cover;
             }    

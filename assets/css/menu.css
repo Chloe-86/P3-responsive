@@ -10,12 +10,9 @@
     width: 100%;
     height: 275px;
     max-width: 1440px;
-    position: absolute;
-   
-   
 }
+
 .menu{
-    margin-top: 283px;
     z-index: 2;
     position: relative;
     background-color: #f6f6f6;
@@ -58,8 +55,7 @@
 .bg-menu img{
     object-fit: cover;
     width: 100%;
-    height: 17.18rem;
-
+    height: 19.18rem;
 }
 
 .entry-wrapper p{
@@ -72,8 +68,12 @@
     overflow: hidden;
     white-space: nowrap;
 }
-
-
+.menu-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 .menu-wrapper{
     /* width: 100%; */
     box-shadow:0 4.011px 15.043px 0px rgba(0,0,0,0.10);
