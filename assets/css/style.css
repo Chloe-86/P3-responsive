@@ -106,10 +106,8 @@ section.fonctioning{
     }
     
     .card{
-       
-        display: flex;
-        flex-direction: column;
-        gap: 1.12rem;
+        grid-gap: 1.12rem;
+        display: grid;
         cursor: pointer;
 
         img{

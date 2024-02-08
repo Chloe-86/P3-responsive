@@ -3,12 +3,12 @@
     z-index: 100;
 } 
 
-#logo-anim {
+.logo-anim {
     width: 22px;
     height: 21px;
 }
 
-#logo-anim path {
+.logo-anim path {
     fill: rgb(255, 255, 255);
     stroke: black;
     fill-opacity: 0;
@@ -17,16 +17,26 @@
     stroke-width: 0.5;
 }
 
-#logo-anim path:hover{
+.logo-anim path:hover {
     stroke: rgb(255, 255, 255);
     fill-opacity: 1;
     animation-name: fill-anim;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    fill: url(#paint0_linear_0_1);
-
 }
 
+#logo-anim1  path:hover{
+    fill: url(#paint1);
+}
+#logo-anim2  path:hover{
+    fill: url(#paint2);
+}
+#logo-anim3  path:hover{
+    fill: url(#paint3);
+}
+#logo-anim4  path:hover{
+    fill: url(#paint4);
+}
 
    @keyframes fill-anim {
     0% {
