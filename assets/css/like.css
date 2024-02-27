@@ -1,6 +1,12 @@
-.heart-anim {
+.card article{
     position: relative;
-    z-index: 100;
+}
+.heart-anim {
+    /* position: relative;
+    z-index: 100; */
+    position: absolute;
+    bottom: 1.56rem;
+    right: 1.56rem;
 } 
 
 .logo-anim {

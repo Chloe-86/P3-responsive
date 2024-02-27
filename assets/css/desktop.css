@@ -1,65 +1,62 @@
-@import url('../css/generic.css');
+@import url("../css/generic.css");
 
-@media (min-width: 1024px) { 
-
-  .wrapper-func{
+@media (min-width: 1024px) {
+  .wrapper-func {
     display: flex;
     flex-direction: row;
     justify-content: unset;
   }
 
-  body > div > main > section.restaurants > div{
-    grid-template-columns: repeat(2,1fr)!important;
-    grid-gap: 6.25rem!important;
+  body > div > main > section.restaurants > div {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 6.25rem !important;
   }
 
-  .bg-menu{
+  .bg-menu {
     /* height: 383px; */
   }
 
-  .menu{
-    padding: 0.94rem 10% 0!important;
+  .menu {
+    padding: 0.94rem 10% 0 !important;
     max-width: 1055px;
     margin: 0 auto;
   }
-  .wrapper{
-    width: 322.486px;
-    
+  .wrapper {
+    width: 100%;
   }
-  .wrapper-func{
-    gap: 37px!important;
+  .wrapper-func {
+    gap: 37px !important;
   }
-  .fonctioning{
-    padding: 1.03rem 11.25rem!important;
+  .fonctioning {
+    padding: 1.03rem 11.25rem !important;
   }
-  .restaurants{
+  .restaurants {
     padding: 1.88rem 11.25rem;
   }
-  .footer{
+  .footer {
     display: flex;
   }
-  body > div > footer > div{
-    flex-direction: row!important;
+  body > div > footer > div {
+    flex-direction: row !important;
   }
-  .footer{
+  .footer {
     flex-direction: row-reverse;
-    .txt{
+    .txt {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .txt img{
-      width: 0.88rem!important;
-      
+    .txt img {
+      width: 0.88rem !important;
     }
-    .txt > div:nth-child(2) > p{
-      width: 10.5rem!important;
+    .txt > div:nth-child(2) > p {
+      width: 10.5rem !important;
     }
-    .txt > p:nth-child(4){
-      width: 8.12rem!important;
+    .txt > p:nth-child(4) {
+      width: 8.12rem !important;
     }
-    p.logo{
-      padding-right: 0.8863rem;
+    p.logo {
+      padding-right: 0.886rem;
     }
   }
-} 
+}
