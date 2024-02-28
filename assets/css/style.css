@@ -1,188 +1,188 @@
-@import url('../css/generic.css');
+@import url("../css/generic.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 
 /* ce qui corresponds ci dessous au mobile first*/
 
+p.logo {
+  color: var(--main-color);
+  text-align: center;
+  font-family: "Shrikhand", serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0.88rem;
+  z-index: 1;
+}
 
-p.logo{
-        color: var(--main-color);
-        text-align: center;
-        font-family: 'Shrikhand', serif;
-        font-size: 1.875rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 0.88rem;
-        z-index: 1;
-    }
+.header_city {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  background: var(--main-second-color);
+  padding: 0.94rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
 
-.header_city{
-        display: flex;
-        gap: 5%;
-        justify-content: center;
-        background: var(--main-second-color);
-        padding: 0.94rem;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        z-index: 10;
-    }
+.header_text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.12rem;
+  gap: 1.13rem;
+  background-color: var(--lightgrey);
+  z-index: 2;
 
-.header_text{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2.12rem;
-        gap: 1.13rem;
-        background-color: var(--lightgrey);
-        z-index: 2;
-
-        p{
-            font-weight: 300;
-            font-size: 1.125rem;
-        }
-
-      
-    }
+  p {
+    font-weight: 300;
+    font-size: 1.125rem;
+  }
+}
 
 /* ****************************************************************Fonctionnement************************************************************************ */
 
-.wrapper-func{
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    gap: 1.56rem;
-    
+.wrapper-func {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.56rem;
 }
 
-section.fonctioning{
-    margin: 3rem 0 4.25rem 0;
-    padding: 2.03rem;
+section.fonctioning {
+  margin: 3rem 0 4.25rem 0;
+  padding: 2.03rem;
 
-    h2{
-        margin-bottom: 2.03rem;
+  h2 {
+    margin-bottom: 2.03rem;
+  }
+
+  .wrapper {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    border-radius: 1.25rem;
+    background-color: var(--lightgrey);
+    gap: 1.67rem;
+    padding: 1.79rem 1.76rem 1.76rem 1.76rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+    p {
+      text-wrap: nowrap;
+      font-weight: 500;
     }
-        
-    .wrapper{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        border-radius: 1.25rem;
-        background-color: var(--lightgrey);
-        gap: 1.69rem;
-        padding: 1.79rem 1.76rem ;
-        box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
-    
-       
-        p{
-           
-            font-weight: 500;
-        }
-    }
-    
-    .circle{
-        position: absolute;
-        left: 0%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        background-color: #9356DC;
-        color: white;
-        border-radius: 50%;
-        padding: 5px 10px;
-    }
+  }
+  .wrapper-func :nth-child(1) img {
+    padding-left: 1.08rem!important;
+   } 
+
+  /* .wrapper-func :nth-child(2) img{
+    padding-left: 2.16rem;
+  }
+  .wrapper-func :nth-child(3) img{
+    padding-left: 2.22rem;
+  }  */
+
+  .circle {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #9356dc;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
 }
 /* ****************************************************************Restaurants************************************************************************ */
 
-.restaurants{
+.restaurants {
+  background-color: var(--lightgrey);
+  padding: 1.06rem;
+  margin-bottom: 4.13rem;
 
-    background-color: var(--lightgrey);
-    padding: 1.06rem;
-    margin-bottom: 4.13rem;
+  h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 
-    h2{
-        padding-bottom: 1rem ;
-        font-size: 1.5rem;
-        font-weight: 700;
+  .card {
+    grid-gap: 1.12rem;
+    display: grid;
+    cursor: pointer;
+
+    img {
+      border-radius: 0.93rem 0.93rem 0 0;
     }
-    
-    .card{
-        grid-gap: 1.12rem;
-        display: grid;
-        cursor: pointer;
 
-        img{
-            border-radius:  0.93rem 0.93rem 0 0;
-        }
+    .card-wrapper {
+      background-color: var(--main-bg);
+      position: relative;
+      border-radius: 0.9375rem;
 
-        .card-wrapper{
-            background-color: var(--main-bg);
-            position: relative;
-            border-radius: 0.9375rem;
-            
-            .under-wrapper{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 1rem 2.06rem 0.75rem 0.81rem;
-            }
-            p:nth-child(1){
-                background-color: var(--green-bg);
-                color: var(--green);
-                width: 5rem;
-                text-transform: capitalize;
-                font-size: 0.875rem;
-                text-align: center;
-                border-radius: 0.125rem;
-                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-                padding: 0.44rem 0.6rem 0.38rem 0.56rem ;
-                position: absolute;
-                right: 1.35rem;
-                top: 1.35rem;
-                font-weight: 500;
-                font-family: 'Roboto';
-            }
-            img{
-                height: 10rem;
-                width: 100%;
-                object-fit: cover;
-            }    
-        .card-text{
-            
-           gap: 0.31rem;
+      .under-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2.06rem 0.75rem 0.81rem;
+      }
+      p:nth-child(1) {
+        background-color: var(--green-bg);
+        color: var(--green);
+        width: 5rem;
+        text-transform: capitalize;
+        font-size: 0.875rem;
+        text-align: center;
+        border-radius: 0.125rem;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 0.44rem 0.6rem 0.38rem 0.56rem;
+        position: absolute;
+        right: 1.35rem;
+        top: 1.35rem;
+        font-weight: 500;
+        font-family: "Roboto";
+      }
+      img {
+        height: 10rem;
+        width: 100%;
+        object-fit: cover;
+      }
+      .card-text {
+        gap: 0.31rem;
 
-            h3{
-                font-weight: 700;
-            }
-            p{
-                font-weight: 300;
-            }
+        h3 {
+          font-weight: 700;
         }
+        p {
+          font-weight: 300;
         }
-       
+      }
     }
+  }
 }
 /* ****************************************************************footer************************************************************************ */
 
-.footer{
-    padding: 1.38rem 1.56rem;
-    background-color: #353535;
+.footer {
+  padding: 1.38rem 1.56rem;
+  background-color: #353535;
+  color: white;
+  p.logo {
     color: white;
-    p.logo{
-        color: white;
-        font-size: 1.125rem;
-        text-align: left;
+    font-size: 1.125rem;
+    text-align: left;
+  }
+  .txt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.44rem;
+    font-weight: 500;
+    .flx {
+      display: flex;
+      gap: 0.5rem;
     }
-    .txt{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 0.44rem;
-        font-weight: 500;
-        .flx{
-            display: flex;
-            gap: 0.5rem;
-        }
-    }
+  }
 }
-

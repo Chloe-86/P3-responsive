@@ -49,16 +49,16 @@
 
      }
 
-.menu .anim-block:nth-of-type(1) {
-    animation-delay: 0s; /* Premier élément commence après 1s */
+.menu #anim-block1 {
+    animation-delay: 1s; /* Premier élément commence après 1s */
 }
 
-.menu .anim-block:nth-of-type(2) {
-    animation-delay: 1s; /* Deuxième élément commence après 3s */
+.menu #anim-block2{
+    animation-delay: 2s; /* Deuxième élément commence après 3s */
 }
 
-.menu .anim-block:nth-of-type(3) {
-    animation-delay: 2s; /* Troisième élément commence après 5s */
+.menu #anim-block3{
+    animation-delay: 3s; /* Troisième élément commence après 5s */
 }
 
 @keyframes translateY{

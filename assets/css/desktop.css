@@ -5,8 +5,24 @@
     display: flex;
     flex-direction: row;
     justify-content: unset;
-  }
 
+  }
+  .wrapper-func :nth-child(1) img {
+    padding-left: 2.11rem;
+  }
+  .wrapper-func :nth-child(2) img{
+    padding-left: 2.21rem;
+  }
+  .wrapper-func :nth-child(3) img{
+    padding-left: 2.36rem;
+  }
+  .wrapper{
+    gap: 1.67rem !important;
+  }
+  section.fonctioning .wrapper p {
+    text-wrap: unset;
+
+  }
   body > div > main > section.restaurants > div {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-gap: 6.25rem !important;
@@ -17,9 +33,9 @@
   }
 
   .menu {
-    padding: 0.94rem 10% 0 !important;
+    padding: 51px 210px 40px;
     max-width: 1055px;
-    margin: 0 auto;
+    margin: 0 193px;
   }
   .wrapper {
     width: 100%;
