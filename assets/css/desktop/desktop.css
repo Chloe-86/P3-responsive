@@ -1,6 +1,7 @@
-@import url("../css/generic.css");
-
 @media (min-width: 1024px) {
+  .header_city{
+    box-shadow:unset;
+  }
   .wrapper-func {
     display: flex;
     flex-direction: row;
@@ -17,6 +18,13 @@
   }
   .wrapper {
     gap: 1.67rem !important;
+    width: 33% !important;
+  }
+ 
+  section.fonctioning {
+  margin: 3rem 0 4.25rem 0;
+  padding: 2.03rem 11.25rem;
+
   }
   section.fonctioning .wrapper p {
     text-wrap: unset;
@@ -26,39 +34,30 @@
     grid-gap: 6.25rem !important;
   }
 
-  .bg-menu {
-    /* height: 383px; */
-  }
-
+  /* menu desktop */
   .menu {
     padding: 51px 210px 40px;
     max-width: 1055px;
     margin: 0 193px;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  .wrapper-func {
-    gap: 37px !important;
-  }
-  .fonctioning {
-    padding: 1.03rem 11.25rem !important;
+
+    .entry-wrapper {
+      max-width: unset;
+    }
   }
   .restaurants {
     padding: 1.88rem 11.25rem;
   }
-
   body > div > footer > div {
     flex-direction: row !important;
   }
   .footer {
-    p.logo{
+    p.logo {
       width: 137px;
-      margin-bottom:unset;
+      margin-bottom: unset;
     }
     .txt {
       display: flex;
-      flex-direction: row!important;
+      flex-direction: row !important;
       justify-content: space-between;
       align-items: center;
     }
@@ -68,15 +67,16 @@
     display: flex;
   }
 
-  .nav__wrapper li:nth-child(2) span,.nav__wrapper li:nth-child(4) span{
+  .nav__wrapper li:nth-child(2) span,
+  .nav__wrapper li:nth-child(4) span {
     display: inline-block;
   }
 
-  .nav__wrapper li:nth-child(2) span{
-   width: 168px;
+  .nav__wrapper li:nth-child(2) span {
+    width: 168px;
   }
 
-  .nav__wrapper li:nth-child(4) span{
+  .nav__wrapper li:nth-child(4) span {
     width: 130px;
   }
 }
