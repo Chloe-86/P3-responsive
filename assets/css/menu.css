@@ -78,7 +78,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-
+  z-index: 100;
   .entry-wrapper {
     padding-left: 0.94rem;
   }
@@ -101,12 +101,8 @@
   white-space: nowrap;
   font-weight: bold;
   padding-top: 17px;
-}
-.price p:hover {
-  padding-top: 17px;
-}
-.price p:hover ~ .entry-wrapper {
-  flex: 1;
+  position: absolute;
+  right: 0;
 }
 
 .entry-wrapper {
@@ -126,16 +122,12 @@
   right: -100px;
 }
 
-.price:hover img {
-  /* display: block;  */
-
+.menu-wrapper:hover img {
+  display: block; 
   transform: translate(0px);
   right: 0;
 }
-.price p {
-  position: absolute;
-  right: 0;
-}
-.price:hover p {
+
+.menu-wrapper:hover p {
   right: 50px;
 }

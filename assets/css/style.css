@@ -18,7 +18,7 @@ p.logo {
 
 .header_city {
   display: flex;
-  gap: 5%;
+  gap: 17px;
   justify-content: center;
   background: var(--main-second-color);
   padding: 0.94rem;
@@ -39,6 +39,7 @@ p.logo {
   p {
     font-weight: 300;
     font-size: 1.125rem;
+    color: --();
   }
 }
 
