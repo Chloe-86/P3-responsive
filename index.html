@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/generic.css" >
-  <link rel="stylesheet" href="./assets/css/style.css" >
-  <link rel="stylesheet" href="./assets/css/desktop.css" >
-  <link rel="stylesheet" href="./assets/css/anim.css" >
-  <link rel="stylesheet" href="./assets/css/like.css" >
+  <link rel="stylesheet" href="./assets/css/generic.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/desktop.css">
+  <link rel="stylesheet" href="./assets/css/anim.css">
+  <link rel="stylesheet" href="./assets/css/like.css">
 </head>
 
 <body>
-  <div class="page-loader">
+  <!-- <div class="page-loader">
     <span class="loader"></span>
-  </div>
+  </div> -->
   <div class="main-container">
     <header class="header">
       <div class="header_logo">
@@ -93,8 +93,7 @@
             <a href="restaurants/la-note-enchantée.html" target="blank">
               <div class="card-wrapper">
                 <p>nouveau</p>
-                <img src="assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="assiette dégustative">
+                <img src="assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="assiette dégustative">
                 <div class="under-wrapper">
                   <div class="card-text">
                     <h3>La note enchantée</h3>
@@ -178,22 +177,26 @@
       </section>
     </main>
     <footer class="footer">
-      <div>
-        <p class="logo">Ohmyfood</p>
-      </div>
-      <div class="txt">
-        <div class="flx">
-          <img src="assets/svg/partenaire.svg" alt="logo main">
-          <p>Proposer un restaurant</p>
+      <nav class="nav">
+        <div>
+          <p class="logo">Ohmyfood</p>
         </div>
-        <div class="flx">
-          <img src="assets/svg/couvert.svg" alt="logo couvert">
-          <p>Devenir partenaire</p>
-        </div>
-        <p>Mentions légales</p>
-        <p><a href="mailto:contact@contact.fr">Contact</a></p>
-      </div>
+        <ul class="txt nav__wrapper">
+          <li>
+            <img src="assets/svg/partenaire.svg" alt="Logo main">
+            <span>Proposer un restaurant</span>
+          </li>
+          <li>
+            <img src="assets/svg/couvert.svg" alt="Logo couvert">
+            <span>Devenir partenaire</span>
+          </li>
+          <li>Mentions légales</li>
+          <li><span><a href="mailto:contact@contact.fr">Contact</a></span>
+          </li>
+        </ul>
+      </nav>
     </footer>
+
   </div>
 </body>
 

@@ -5,23 +5,21 @@
     display: flex;
     flex-direction: row;
     justify-content: unset;
-
   }
   .wrapper-func :nth-child(1) img {
     padding-left: 2.11rem;
   }
-  .wrapper-func :nth-child(2) img{
+  .wrapper-func :nth-child(2) img {
     padding-left: 2.21rem;
   }
-  .wrapper-func :nth-child(3) img{
+  .wrapper-func :nth-child(3) img {
     padding-left: 2.36rem;
   }
-  .wrapper{
+  .wrapper {
     gap: 1.67rem !important;
   }
   section.fonctioning .wrapper p {
     text-wrap: unset;
-
   }
   body > div > main > section.restaurants > div {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -49,30 +47,36 @@
   .restaurants {
     padding: 1.88rem 11.25rem;
   }
-  .footer {
-    display: flex;
-  }
+
   body > div > footer > div {
     flex-direction: row !important;
   }
   .footer {
-    flex-direction: row-reverse;
+    p.logo{
+      width: 137px;
+      margin-bottom:unset;
+    }
     .txt {
       display: flex;
+      flex-direction: row!important;
       justify-content: space-between;
       align-items: center;
     }
-    .txt img {
-      width: 0.88rem !important;
-    }
-    .txt > div:nth-child(2) > p {
-      width: 10.5rem !important;
-    }
-    .txt > p:nth-child(4) {
-      width: 8.12rem !important;
-    }
-    p.logo {
-      padding-right: 0.886rem;
-    }
+  }
+  .nav {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+
+  .nav__wrapper li:nth-child(2) span,.nav__wrapper li:nth-child(4) span{
+    display: inline-block;
+  }
+
+  .nav__wrapper li:nth-child(2) span{
+   width: 168px;
+  }
+
+  .nav__wrapper li:nth-child(4) span{
+    width: 130px;
   }
 }
