@@ -38,6 +38,10 @@ a {
   color: map-get($colors, dark-color);
   text-decoration: none;
 }
+
+footer a{
+  color: map-get($colors, light-color);
+}
 body {
   font-family: map-get($fonts, roboto);
 }
