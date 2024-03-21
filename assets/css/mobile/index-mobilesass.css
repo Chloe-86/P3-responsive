@@ -3,42 +3,33 @@
 header {
   overflow: hidden;
 }
-
-.header_city {
+header .header_city {
   display: flex;
   gap: 17px;
   justify-content: center;
-  background: #EAEAEA;
+  background: #eaeaea;
   padding: 0.94rem;
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 10;
   display: inline-flex;
   width: 100%;
 }
-
-.header_text {
+header .header_text {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2.12rem;
   gap: 1.13rem;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   z-index: 2;
 }
-.header_text p {
+header .header_text p {
   font-weight: 300;
   font-size: 1.125rem;
 }
 
 /* ****************************************************************Fonctionnement************************************************************************ */
-.wrapper-func {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.56rem;
-}
-
 section.fonctioning {
   margin: 3rem 0 4.25rem 0;
   padding: 2.03rem;
@@ -59,6 +50,11 @@ section.fonctioning .wrapper p {
   text-wrap: nowrap;
   font-weight: 500;
 }
+section.fonctioning .wrapper-func {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+}
 section.fonctioning .wrapper-func:nth-child(1) img {
   padding-left: 1.08rem !important;
 }
@@ -67,7 +63,7 @@ section.fonctioning .circle {
   left: 0%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: #ffffff;
   border-radius: 50%;
   padding: 5px 10px;
@@ -75,7 +71,7 @@ section.fonctioning .circle {
 
 /* ****************************************************************Restaurants************************************************************************ */
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 1.06rem;
   margin-bottom: 4.13rem;
 }
