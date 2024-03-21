@@ -1,0 +1,84 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  section.fonctioning .wrapper p {
+    font-size: clamp(14px, 1vw, 16px);
+    text-wrap: nowrap;
+  }
+  .wrapper-func {
+    gap: clamp(16px, 1vw, 36px) !important;
+  }
+  .wrapper-func img {
+    padding-left: 1vw !important;
+  }
+  .wrapper {
+    gap: 1vw !important;
+    padding: 1.76rem 1vw !important;
+  }
+  .menu {
+    padding: 51px 14.58vw 40px;
+    max-width: 1055px;
+    margin: -40px 13.4vw 0;
+  }
+}
+/* menu desktop */
+@media (min-width: 1024px) {
+  .header_city {
+    box-shadow: unset;
+  }
+  .wrapper-func {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+  }
+  .wrapper-func:nth-child(1) img {
+    padding-left: 2.11rem;
+  }
+  .wrapper-func:nth-child(2) img {
+    padding-left: 2.21rem;
+  }
+  .wrapper-func:nth-child(3) img {
+    padding-left: 2.36rem;
+  }
+  .wrapper {
+    gap: 1.67rem !important;
+    width: 33% !important;
+  }
+  section.fonctioning {
+    margin: 3rem 0 4.25rem 0;
+    padding: 2.03rem 11.25rem;
+  }
+  section.fonctioning .wrapper p {
+    text-wrap: unset;
+  }
+  body > div > main > section.restaurants > div {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 6.25rem !important;
+  }
+  body > div > footer > div {
+    flex-direction: row !important;
+  }
+  .restaurants {
+    padding: 1.88rem 11.25rem;
+  }
+  .footer p.logo {
+    width: 137px;
+    margin-bottom: unset;
+  }
+  .footer .txt {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+  .nav__wrapper li:nth-child(2) span {
+    display: inline-block;
+    width: 168px;
+  }
+  .nav__wrapper li:nth-child(4) span {
+    display: inline-block;
+    width: 130px;
+  }
+}/*# sourceMappingURL=tabletsass.css.map */

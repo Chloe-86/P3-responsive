@@ -1,0 +1,76 @@
+
+@import '../css/sass/variables/colors/colors.scss';
+
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap";
+/****** General ***********/
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  max-width: 1440px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  color: map-get($colors, dark-color);
+  text-decoration: none;
+}
+body {
+  font-family: map-get($fonts, roboto);
+}
+h2 {
+  font-weight: 700;
+}
+p {
+  font-family: map-get($fonts, roboto);
+  font-size: 1rem;
+  font-weight: 300;
+}
+.button {
+  background: map-get($colors, buttonLinear);
+  color: map-get($colors, color_2);
+  padding: 16px 48px;
+  border-radius: 1.56rem;
+  border: none;
+  width: fit-content;
+  margin: auto;
+  color: map-get($colors, light-color);
+  text-align: center;
+  font-family: map-get($fonts, roboto);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+
+  &:hover {
+    border-radius: 25px;
+    background: linear-gradient(
+        -159.36deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+      ),
+      map-get($colors, buttonLinear);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+li {
+  list-style-type: none;
+}
+header {
+  p.logo {
+    color: map-get($colors, dark-color);
+    text-align: center;
+    font-family: map-get($fonts, shri);
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0.88rem;
+    z-index: 1;
+  }
+}

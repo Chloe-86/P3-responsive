@@ -1,0 +1,202 @@
+// Importation des variables de couleurs et de fonts
+@import '../sass/variables/colors/colors.scss';
+@import '../sass/variables/fonts/font.scss';
+// $colors: (
+//   dark-color: #000000,
+//   main-second-color: #eaeaea,
+//   light-color: #ffffff,
+//   darkgrey-color: #EAEAEA,
+//   lightgrey-color: #F6F6F6,
+//   veryDarkGrey:#353535,
+//   green: #008766,
+//   green-bg: #99e2d0,
+//   purple-color:#9356DC,
+//   buttonLinear:
+//       linear-gradient(
+//         -159.36deg,
+//         rgb(147, 86, 220) 14.42%,
+//         rgb(255, 121, 218) 92.04%
+//       ),
+// );
+// $fonts: (
+//   roboto: Roboto,
+//   shri: Shrikhand,
+// );
+
+
+/* ce qui corresponds ci dessous au mobile first*/
+
+/* page d' accueil */
+
+
+header {
+	overflow: hidden;
+}
+.header_city {
+	display: flex;
+	gap: 17px;
+	justify-content: center;
+	background: map-get($colors,darkgrey-color);
+	padding: 0.94rem;
+	box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	z-index: 10;
+	display: inline-flex;
+	width: 100%;
+}
+.header_text {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2.12rem;
+	gap: 1.13rem;
+	background-color: map-get($colors, lightgrey-color );
+	z-index: 2;
+	p {
+		font-weight: 300;
+		font-size: 1.125rem;
+	}
+}
+/* ****************************************************************Fonctionnement************************************************************************ */
+
+
+.wrapper-func {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1.56rem;
+}
+section.fonctioning {
+	margin: 3rem 0 4.25rem 0;
+	padding: 2.03rem;
+	h2 {
+		margin-bottom: 2.03rem;
+	}
+	.wrapper {
+		position: relative;
+		justify-content: center;
+		display: flex;
+		border-radius: 1.25rem;
+		background-color: map-get($colors, lightgrey);
+		gap: 1.67rem;
+		padding: 1.79rem 1.76rem 1.76rem 1.76rem;
+		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+		p {
+			text-wrap: nowrap;
+			font-weight: 500;
+		}
+	}
+	.wrapper-func {
+		&:nth-child(1) {
+			img {
+				padding-left: 1.08rem !important;
+			}
+		}
+	}
+	.circle {
+		position: absolute;
+		left: 0%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: map-get($colors, purple-color);
+		color: map-get($colors, light-color);
+		border-radius: 50%;
+		padding: 5px 10px;
+	}
+}
+
+/* ****************************************************************Restaurants************************************************************************ */
+
+
+.restaurants {
+	background-color: map-get($colors, lightgrey-color);
+	padding: 1.06rem;
+	margin-bottom: 4.13rem;
+	h2 {
+		padding-bottom: 1rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	.card {
+		grid-gap: 1.12rem;
+		display: grid;
+		cursor: pointer;
+		img {
+			border-radius: 0.93rem 0.93rem 0 0;
+		}
+		.card-wrapper {
+			background-color: map-get($colors, light-color );
+			position: relative;
+			border-radius: 0.9375rem;
+			.under-wrapper {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 2.06rem 0.75rem 0.81rem;
+			}
+			p {
+				&:nth-child(1) {
+					background-color: map-get($colors, green-bg);
+					color: map-get($colors, light-color);
+					width: 5rem;
+					text-transform: capitalize;
+					font-size: 0.875rem;
+					text-align: center;
+					border-radius: 0.125rem;
+					box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+					padding: 0.44rem 0.6rem 0.38rem 0.56rem;
+					position: absolute;
+					right: 1.35rem;
+					top: 1.35rem;
+					font-weight: 500;
+					font-family: map-get($fonts, roboto );
+				}
+			}
+			img {
+				height: 10rem;
+				width: 100%;
+				object-fit: cover;
+			}
+			.card-text {
+				gap: 0.31rem;
+				h3 {
+					font-weight: 700;
+				}
+				p {
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}
+
+
+/* ****************************************************************footer************************************************************************ */
+.footer {
+	padding: 1.38rem 1.56rem;
+	background-color: map-get($colors, veryDarkGrey);
+	color: map-get($colors, light-color );
+	p.logo {
+		color:map-get($colors, light-color );;
+		font-family: map-get($fonts, shri );
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		z-index: 1;
+		margin-bottom: 16px;
+	}
+	.txt {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.nav__wrapper {
+		gap: 7px;
+		li {
+			img {
+				margin-right: 11px;
+			}
+		}
+	}
+}
