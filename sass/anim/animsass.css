@@ -1,6 +1,3 @@
-$background-color_1: #ffffff;
-$border-bottom-color_1: transparent;
-
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -35,7 +32,7 @@ $border-bottom-color_1: transparent;
 }
 .page-loader {
   position: fixed;
-  background-color: $background-color_1;
+  background-color: #ffffff;
   height: 100vh;
   inset: 0;
   z-index: 5;
@@ -45,29 +42,28 @@ $border-bottom-color_1: transparent;
   display: grid;
   place-items: center;
   z-index: 1000;
-  .loader {
-    width: 48px;
-    height: 48px;
-    border: 5px solid #000000;
-    border-bottom-color: $border-bottom-color_1;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-  }
+}
+.page-loader .loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 
 .anim-block {
   animation: opacityAnim 2s, translateY 2s;
 }
-.menu {
-  #anim-block1 {
-    animation-delay: 1s;
-  }
-  #anim-block2 {
-    animation-delay: 2s;
-  }
-  #anim-block3 {
-    animation-delay: 3s;
-  }
+
+.menu #anim-block1 {
+  animation-delay: 1s;
 }
+.menu #anim-block2 {
+  animation-delay: 2s;
+}
+.menu #anim-block3 {
+  animation-delay: 3s;
+}/*# sourceMappingURL=animsass.css.map */
