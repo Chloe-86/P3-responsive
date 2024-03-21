@@ -1,6 +1,24 @@
-
-@import '../css/sass/variables/colors/colors.scss';
-
+$colors: (
+  dark-color: #000000,
+  main-second-color: #eaeaea,
+  light-color: #ffffff,
+  darkgrey-color: #EAEAEA,
+  lightgrey-color: #F6F6F6,
+  green: #008766,
+  green-bg: #99e2d0,
+  purple-color:#9356DC,
+  buttonLinear:
+      linear-gradient(
+        -159.36deg,
+        rgb(147, 86, 220) 14.42%,
+        rgb(255, 121, 218) 92.04%
+      ),
+);
+// Variables de polices
+$fonts: (
+  roboto: Roboto,
+  shri: Shrikhand,
+);
 
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap";
 /****** General ***********/
