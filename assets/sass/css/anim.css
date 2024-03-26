@@ -8,8 +8,7 @@
 
 .main-container {
   max-width: 1440px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
 }
@@ -42,8 +41,6 @@ p {
   padding: 16px 48px;
   border-radius: 1.56rem;
   border: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   color: #ffffff;
@@ -52,14 +49,12 @@ p {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
 .button:hover {
   border-radius: 25px;
   background: linear-gradient(-159.36deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(-159.36deg, rgb(147, 86, 220) 14.42%, rgb(255, 121, 218) 92.04%);
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 li {
@@ -76,4 +71,79 @@ header p.logo {
   line-height: normal;
   margin: 0.88rem;
   z-index: 1;
-}/*# sourceMappingURL=settings.css.map */
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes close {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes translateY {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes opacityAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.page-loader {
+  position: fixed;
+  background-color: #F6F6F6;
+  height: 100vh;
+  inset: 0;
+  z-index: 5;
+  animation: close 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.page-loader .loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.anim-block {
+  animation: opacityAnim 2s, translateY 2s;
+}
+
+.menu #anim-block1 {
+  animation-delay: 1s;
+}
+
+.menu #anim-block2 {
+  animation-delay: 2s;
+}
+
+.menu #anim-block3 {
+  animation-delay: 3s;
+} 
+
+/*# sourceMappingURL=anim.css.map */
