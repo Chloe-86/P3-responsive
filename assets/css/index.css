@@ -123,6 +123,7 @@ section.fonctioning .wrapper {
   display: -ms-flexbox;
   display: flex;
   border-radius: 1.25rem;
+  background-color: #F6F6F6;
   gap: 1.67rem;
   padding: 1.79rem 1.76rem 1.76rem 1.76rem;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -151,12 +152,14 @@ section.fonctioning .circle {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-color: #9356DC;
   border-radius: 50%;
   padding: 5px 10px;
 }
 
 /* ****************************************************************Restaurants************************************************************************ */
 .restaurants {
+  background-color: #F6F6F6;
   padding: 1.06rem;
   margin-bottom: 4.13rem;
 }
@@ -174,6 +177,7 @@ section.fonctioning .circle {
   border-radius: 0.93rem 0.93rem 0 0;
 }
 .restaurants .card .card-wrapper {
+  background-color: #ffffff;
   position: relative;
   border-radius: 0.9375rem;
 }
@@ -190,6 +194,8 @@ section.fonctioning .circle {
   padding: 1rem 2.06rem 0.75rem 0.81rem;
 }
 .restaurants .card .card-wrapper p:nth-child(1) {
+  background-color: #99e2d0;
+  color: #ffffff;
   width: 5rem;
   text-transform: capitalize;
   font-size: 0.875rem;
@@ -202,6 +208,7 @@ section.fonctioning .circle {
   right: 1.35rem;
   top: 1.35rem;
   font-weight: 500;
+  font-family: Roboto;
 }
 .restaurants .card .card-wrapper img {
   height: 10rem;
