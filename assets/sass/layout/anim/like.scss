@@ -1,7 +1,5 @@
 
-@import "../../variables/colors/colors.scss";
-@import "../../variables/mixin/mixin.scss";
-@import "../../variables/fonts/fonts.scss";
+@import "../../settings.scss";
 @keyframes fill-anim {
 	0% {
 		fill-opacity: 0;
