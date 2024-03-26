@@ -27,13 +27,13 @@
 .menu {
   z-index: 2;
   position: relative;
-  background-color: map-get($map:$colors, $key:lightgrey-color);
+  background-color: $lightgrey-color;
   padding: 0.94rem;
   border-radius: 20px 20px 0 0;
-  font-family: map-get($map:$fonts, $key:roboto);
+  font-family: $roboto;
   margin: -40px 0 0;
   h2 {
-    font-family: map-get($map:$fonts, $key:shri);
+    font-family: $shri;
   }
   h3 {
     margin-bottom: 0.35rem;
@@ -43,7 +43,7 @@
     font-size: 1rem;
   }
   .trait {
-    background-color: map-get($map: $colors, $key: green-bg);
+    background-color:$green-bg;
     width: 2.5rem;
     height: 0.1875rem;
     margin-bottom: 0.75rem;
@@ -56,9 +56,7 @@
   }
 }
 .menu-title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex;
 	gap: 1.5rem;
 }
 

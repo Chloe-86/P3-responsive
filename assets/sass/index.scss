@@ -1,10 +1,9 @@
-@import './settings.scss';
-
-@import "./layout/mobile/index-mobile.scss";
-@import "./layout/mobile/menu-mobile.scss";
-@import "./layout/desktop/desktop.scss";
-@import "./layout/tablet/tablet.scss";
+@import "./settings.scss";
 
 
 @import "./layout/anim/anim.scss";
 @import "./layout/anim/like.scss";
+@import "./layout/mobile/index-mobile.scss";
+@import "./layout/mobile/menu-mobile.scss";
+@import "./layout/desktop/desktop.scss";
+@import "./layout/tablet/tablet.scss";

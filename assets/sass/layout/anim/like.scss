@@ -85,8 +85,8 @@
 			.heartSvg {
 				svg {
 					path {
-						fill: white;
-						stroke: black;
+						fill: $light-color;
+						stroke: $dark-color;
 						stroke-width: 0.5;
 					}
 				}

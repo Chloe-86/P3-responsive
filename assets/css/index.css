@@ -78,6 +78,237 @@ header p.logo {
   z-index: 1;
 }
 
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes close {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@keyframes close {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@-webkit-keyframes translateY {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes translateY {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@-webkit-keyframes opacityAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.page-loader {
+  position: fixed;
+  background-color: #F6F6F6;
+  height: 100vh;
+  inset: 0;
+  z-index: 5;
+  -webkit-animation: close 1s;
+          animation: close 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.page-loader .loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+}
+
+.anim-block {
+  -webkit-animation: opacityAnim 2s, translateY 2s;
+          animation: opacityAnim 2s, translateY 2s;
+}
+
+.menu #anim-block1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menu #anim-block2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.menu #anim-block3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+} 
+@-webkit-keyframes fill-anim {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  25% {
+    stroke: black;
+    stroke-dashoffset: 10;
+    fill: #FF79DA;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-dashoffset: 50;
+    fill: #9356DC;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 100;
+    stroke: white;
+  }
+} 
+@keyframes fill-anim {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  25% {
+    stroke: black;
+    stroke-dashoffset: 10;
+    fill: #FF79DA;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-dashoffset: 50;
+    fill: #9356DC;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 100;
+    stroke: white;
+  }
+}
+/* input checked like */
+.card article {
+  position: relative;
+}
+
+.heart-anim {
+  position: absolute;
+  bottom: 1.56rem;
+  right: 1.56rem;
+}
+
+.logo-anim {
+  width: 22px;
+  height: 21px;
+}
+.logo-anim path {
+  fill: white;
+  stroke: black;
+  fill-opacity: 0;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  stroke-width: 0.5;
+}
+.logo-anim path:hover {
+  stroke: white;
+  fill-opacity: 1;
+  -webkit-animation-name: fill-anim;
+          animation-name: fill-anim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#logo-anim1 path:hover {
+  fill: url(#paint1);
+}
+
+#logo-anim2 path:hover {
+  fill: url(#paint2);
+}
+
+#logo-anim3 path:hover {
+  fill: url(#paint3);
+}
+
+#logo-anim4 path:hover {
+  fill: url(#paint4);
+}
+
+.hideButton {
+  display: none;
+}
+.hideButton:checked + .heartSvg svg path {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+.heartSvg {
+  cursor: pointer;
+}
+
 /* ce qui corresponds ci dessous au mobile first*/
 /* page d' accueil */
 header {
@@ -247,6 +478,7 @@ section.fonctioning .circle {
 /* ****************************************************************footer************************************************************************ */
 .footer {
   padding: 1.38rem 1.56rem;
+  background-color: #353535;
   color: #ffffff;
 }
 .footer p.logo {
@@ -550,233 +782,4 @@ section.fonctioning .circle {
     display: inline-block;
     width: 130px;
   }
-}
-@-webkit-keyframes rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes close {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-@keyframes close {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-@-webkit-keyframes translateY {
-  0% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-@keyframes translateY {
-  0% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-@-webkit-keyframes opacityAnim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes opacityAnim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.page-loader {
-  position: fixed;
-  background-color: #F6F6F6;
-  height: 100vh;
-  inset: 0;
-  z-index: 5;
-  -webkit-animation: close 1s;
-          animation: close 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  display: grid;
-  place-items: center;
-  z-index: 1000;
-}
-
-.page-loader .loader {
-  width: 48px;
-  height: 48px;
-  border: 5px solid #000000;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-animation: rotation 1s linear infinite;
-          animation: rotation 1s linear infinite;
-}
-
-.anim-block {
-  -webkit-animation: opacityAnim 2s, translateY 2s;
-          animation: opacityAnim 2s, translateY 2s;
-}
-
-.menu #anim-block1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.menu #anim-block2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.menu #anim-block3 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-} 
-@-webkit-keyframes fill-anim {
-  0% {
-    fill-opacity: 0;
-    stroke-dashoffset: 0;
-  }
-  25% {
-    stroke: black;
-    stroke-dashoffset: 10;
-    fill: #FF79DA;
-  }
-  50% {
-    fill-opacity: 1;
-    stroke-dashoffset: 50;
-    fill: #9356DC;
-  }
-  100% {
-    fill-opacity: 1;
-    stroke-dashoffset: 100;
-    stroke: white;
-  }
-} 
-@keyframes fill-anim {
-  0% {
-    fill-opacity: 0;
-    stroke-dashoffset: 0;
-  }
-  25% {
-    stroke: black;
-    stroke-dashoffset: 10;
-    fill: #FF79DA;
-  }
-  50% {
-    fill-opacity: 1;
-    stroke-dashoffset: 50;
-    fill: #9356DC;
-  }
-  100% {
-    fill-opacity: 1;
-    stroke-dashoffset: 100;
-    stroke: white;
-  }
-}
-/* input checked like */
-.card article {
-  position: relative;
-}
-
-.heart-anim {
-  position: absolute;
-  bottom: 1.56rem;
-  right: 1.56rem;
-}
-
-.logo-anim {
-  width: 22px;
-  height: 21px;
-}
-.logo-anim path {
-  fill: white;
-  stroke: black;
-  fill-opacity: 0;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 0;
-  stroke-width: 0.5;
-}
-.logo-anim path:hover {
-  stroke: white;
-  fill-opacity: 1;
-  -webkit-animation-name: fill-anim;
-          animation-name: fill-anim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-#logo-anim1 path:hover {
-  fill: url(#paint1);
-}
-
-#logo-anim2 path:hover {
-  fill: url(#paint2);
-}
-
-#logo-anim3 path:hover {
-  fill: url(#paint3);
-}
-
-#logo-anim4 path:hover {
-  fill: url(#paint4);
-}
-
-.hideButton {
-  display: none;
-}
-.hideButton:checked + .heartSvg svg path {
-  fill: white;
-  stroke: black;
-  stroke-width: 0.5;
-}
-
-.heartSvg {
-  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
