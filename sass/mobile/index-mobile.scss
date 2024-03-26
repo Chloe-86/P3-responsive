@@ -1,27 +1,3 @@
-// Importation des variables de couleurs et de fonts
-// @import '../sass/variables/colors/colors.scss';
-// @import '../sass/variables/fonts/font.scss';
-$colors: (
-  dark-color: #000000,
-  main-second-color: #eaeaea,
-  light-color: #ffffff,
-  darkgrey-color: #eaeaea,
-  lightgrey-color: #f6f6f6,
-  veryDarkGrey: #353535,
-  green: #008766,
-  green-bg: #99e2d0,
-  purple-color: #9356dc,
-  buttonLinear:
-    linear-gradient(
-      -159.36deg,
-      rgb(147, 86, 220) 14.42%,
-      rgb(255, 121, 218) 92.04%
-    ),
-);
-$fonts: (
-  roboto: Roboto,
-  shri: Shrikhand,
-);
 
 /* ce qui corresponds ci dessous au mobile first*/
 

@@ -1,13 +1,13 @@
 $colors: (
-  dark-color: #000000,
-  main-second-color: #eaeaea,
-  light-color: #ffffff,
-  darkgrey-color: #EAEAEA,
-  lightgrey-color: #F6F6F6,
-  green: #008766,
-  green-bg: #99e2d0,
-  purple-color:#9356DC,
-  buttonLinear:
+  --dark-color: #000000,
+  --main-second-color: #eaeaea,
+  --light-color: #ffffff,
+  --darkgrey-color: #EAEAEA,
+  --lightgrey-color: #F6F6F6,
+  --green: #008766,
+  --green-bg: #99e2d0,
+  --purple-color:#9356DC,
+  --buttonLinear:
       linear-gradient(
         -159.36deg,
         rgb(147, 86, 220) 14.42%,

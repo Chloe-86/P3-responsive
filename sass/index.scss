@@ -1,0 +1,18 @@
+//index.scss rassemble tous les fichiers sass
+
+// les variables
+@import "./variables/colors/colors.scss";
+@import "./variables/fonts/fonts.scss";
+
+// les generics
+@import "./settings.scss";
+
+// mobile, tablet, desktop
+@import "./mobile/index-mobile.scss";
+@import "./mobile/menu-mobile.scss";
+@import "./desktop/desktop.scss";
+@import "./tablet/tablet.scss";
+
+// animations
+@import "./anim/anim.scss";
+@import "./anim/like.scss";

@@ -25,7 +25,7 @@
 @media (min-width: 1024px) {
   /***********************index.html*****************************/
   .header_city {
-    box-shadow: unset!important;
+    box-shadow: unset !important;
   }
   section.fonctioning {
     margin: 3rem 0 4.25rem 0;
@@ -82,4 +82,4 @@
     display: inline-block;
     width: 130px;
   }
-}
+}/*# sourceMappingURL=tablet.css.map */
