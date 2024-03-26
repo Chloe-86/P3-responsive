@@ -1,3 +1,24 @@
+@-webkit-keyframes fill-anim {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  25% {
+    stroke: black;
+    stroke-dashoffset: 10;
+    fill: #FF79DA;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-dashoffset: 50;
+    fill: #9356DC;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 100;
+    stroke: white;
+  }
+}
 @keyframes fill-anim {
   0% {
     fill-opacity: 0;
@@ -45,9 +66,12 @@
 .logo-anim path:hover {
   stroke: white;
   fill-opacity: 1;
-  animation-name: fill-anim;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: fill-anim;
+          animation-name: fill-anim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #logo-anim1 path:hover {
