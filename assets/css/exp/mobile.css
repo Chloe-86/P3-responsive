@@ -1,0 +1,161 @@
+/* ce qui corresponds ci dessous au mobile first*/
+/* page d' accueil */
+header {
+  overflow: hidden;
+}
+header .header_city {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+  background: #EAEAEA;
+  padding: 0.94rem;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  display: inline-flex;
+  width: 100%;
+}
+header .header_text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.12rem;
+  gap: 1.13rem;
+  background-color: #F6F6F6;
+  z-index: 2;
+}
+header .header_text p {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+/* ****************************************************************Fonctionnement************************************************************************ */
+section.fonctioning {
+  margin: 3rem 0 4.25rem 0;
+  padding: 2.03rem;
+}
+section.fonctioning h2 {
+  margin-bottom: 2.03rem;
+}
+section.fonctioning .wrapper {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  border-radius: 1.25rem;
+  background-color: #F6F6F6;
+  gap: 1.67rem;
+  padding: 1.79rem 1.76rem 1.76rem 1.76rem;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+section.fonctioning .wrapper p {
+  text-wrap: nowrap;
+  font-weight: 500;
+}
+section.fonctioning .wrapper-func {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+}
+section.fonctioning .wrapper-func:nth-child(1) img {
+  padding-left: 1.08rem !important;
+}
+section.fonctioning .circle {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9356DC;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+/* ****************************************************************Restaurants************************************************************************ */
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 1.06rem;
+  margin-bottom: 4.13rem;
+}
+.restaurants h2 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.restaurants .card {
+  grid-gap: 1.12rem;
+  display: grid;
+  cursor: pointer;
+}
+.restaurants .card img {
+  border-radius: 0.93rem 0.93rem 0 0;
+}
+.restaurants .card .card-wrapper {
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 0.9375rem;
+}
+.restaurants .card .card-wrapper .under-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.06rem 0.75rem 0.81rem;
+}
+.restaurants .card .card-wrapper p:nth-child(1) {
+  background-color: #99e2d0;
+  color: #ffffff;
+  width: 5rem;
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  text-align: center;
+  border-radius: 0.125rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 0.44rem 0.6rem 0.38rem 0.56rem;
+  position: absolute;
+  right: 1.35rem;
+  top: 1.35rem;
+  font-weight: 500;
+  font-family: Roboto;
+}
+.restaurants .card .card-wrapper img {
+  height: 10rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants .card .card-wrapper .card-text {
+  gap: 0.31rem;
+}
+.restaurants .card .card-wrapper .card-text h3 {
+  font-weight: 700;
+}
+.restaurants .card .card-wrapper .card-text p {
+  font-weight: 300;
+}
+
+/* ****************************************************************footer************************************************************************ */
+.footer {
+  padding: 1.38rem 1.56rem;
+  background-color: #353535;
+  color: #ffffff;
+}
+.footer p.logo {
+  color: #ffffff;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+.footer .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .nav__wrapper {
+  gap: 7px;
+}
+.footer .nav__wrapper li img {
+  margin-right: 11px;
+}/*# sourceMappingURL=mobile.css.map */

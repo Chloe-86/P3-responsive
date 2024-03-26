@@ -1,4 +1,9 @@
-@import "./settings.scss";
+
+@import "./variables/colors/colors.scss";
+@import "./variables/mixin/mixin.scss";
+@import "./variables/fonts/fonts.scss";
+
+
 @import "./layout/anim/anim.scss";
 @import "./layout/anim/like.scss";
 @import "./layout/mobile/index-mobile.scss";
