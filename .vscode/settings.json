@@ -11,5 +11,6 @@
             "savePath": "/assets/css/min"
         }
     ],
-    "liveSassCompile.settings.generateMap": true
+    "liveSassCompile.settings.generateMap": true,
+    "liveServer.settings.port": 5501
 }

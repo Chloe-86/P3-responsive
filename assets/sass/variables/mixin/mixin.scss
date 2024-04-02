@@ -1,7 +1,0 @@
-
-// Définition de la mixin
-@mixin flex($display: flex, $justify: center, $align: center) {
-    display: $display;
-    justify-content: $justify;
-    align-items: $align;
-  }

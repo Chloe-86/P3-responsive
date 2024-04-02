@@ -15,3 +15,15 @@ $buttonLinear: linear-gradient(
     rgb(255, 121, 218) 92.04%
 );
 
+
+// Variables de polices
+
+$roboto: Roboto;
+$shri: Shrikhand;
+
+// Définition de la mixin
+@mixin flex($display: flex, $justify: center, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+  }
