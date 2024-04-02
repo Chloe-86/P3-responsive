@@ -4,7 +4,8 @@
   "description": "site menu restaurants",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/style.css"
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/exp/style.css",
+    "minify": "sass --watch  ./assets/sass/main.scss --style compressed ./assets/css/min/style.min.css"
   },
   "repository": {
     "type": "git",
