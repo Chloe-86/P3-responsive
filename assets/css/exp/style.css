@@ -515,6 +515,11 @@ section.fonctioning .circle {
   margin-right: 11px;
 }
 
+@media screen and (max-width: 375px) {
+  .functionning .wrapper {
+    gap: 0.6rem !important;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   /*pour la page index.html*/
   section.fonctioning .wrapper-func {

@@ -173,3 +173,9 @@ section.fonctioning {
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  section.fonctioning .wrapper-func .wrapper{
+    gap: 0.60rem!important;
+  }
+}
