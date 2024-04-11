@@ -1,134 +1,130 @@
+
 /* ce qui corresponds ci dessous au mobile first*/
 
 /* page d' accueil */
-header{
+
+header {
   overflow: hidden;
-}
-
-.header_city {
-  display: flex;
-  gap: 17px;
-  justify-content: center;
-  background: var(--main-second-color);
-  padding: 0.94rem;
-  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  z-index: 10;
-  display: inline-flex;
-  width: 100%;
-}
-
-.header_text {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2.12rem;
-  gap: 1.13rem;
-  background-color: var(--lightgrey);
-  z-index: 2;
-
-  p {
-    font-weight: 300;
-    font-size: 1.125rem;
-    color: --();
+  .header_city {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    background: $darkgrey-color;
+    padding: 0.94rem;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.15),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    display: inline-flex;
+    width: 100%;
+  }
+  .header_text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.12rem;
+    gap: 1.13rem;
+    background-color: $lightgrey-color;
+    z-index: 2;
+    p {
+      font-weight: 300;
+      font-size: 1.125rem;
+    }
   }
 }
-
 /* ****************************************************************Fonctionnement************************************************************************ */
 
-.wrapper-func {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.56rem;
-}
 
 section.fonctioning {
   margin: 3rem 0 4.25rem 0;
   padding: 2.03rem;
-
+  
   h2 {
     margin-bottom: 2.03rem;
   }
-
   .wrapper {
     position: relative;
     justify-content: center;
     display: flex;
     border-radius: 1.25rem;
-    background-color: var(--lightgrey);
+    background-color: $lightgrey-color;
     gap: 1.67rem;
     padding: 1.79rem 1.76rem 1.76rem 1.76rem;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-
+	
     p {
       text-wrap: nowrap;
       font-weight: 500;
     }
   }
-  .wrapper-func :nth-child(1) img {
-    padding-left: 1.08rem !important;
+  .wrapper-func {
+	
+	display: flex;
+	flex-direction: column;
+	gap: 1.56rem;
+    &:nth-child(1) {
+      img {
+        padding-left: 1.08rem !important;
+      }
+    }
   }
-
   .circle {
     position: absolute;
     left: 0%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #9356dc;
-    color: white;
+    background-color: $purple-color;
+    color: $light-color;
     border-radius: 50%;
     padding: 5px 10px;
   }
 }
+
 /* ****************************************************************Restaurants************************************************************************ */
 
 .restaurants {
-  background-color: var(--lightgrey);
+  background-color: $lightgrey-color;
   padding: 1.06rem;
   margin-bottom: 4.13rem;
-
   h2 {
     padding-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
   }
-
   .card {
     grid-gap: 1.12rem;
     display: grid;
     cursor: pointer;
-
     img {
       border-radius: 0.93rem 0.93rem 0 0;
     }
-
     .card-wrapper {
-      background-color: var(--main-bg);
+      background-color:$light-color;
       position: relative;
       border-radius: 0.9375rem;
-
       .under-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2.06rem 0.75rem 0.81rem;
       }
-      p:nth-child(1) {
-        background-color: var(--green-bg);
-        color: var(--green);
-        width: 5rem;
-        text-transform: capitalize;
-        font-size: 0.875rem;
-        text-align: center;
-        border-radius: 0.125rem;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        padding: 0.44rem 0.6rem 0.38rem 0.56rem;
-        position: absolute;
-        right: 1.35rem;
-        top: 1.35rem;
-        font-weight: 500;
-        font-family: "Roboto";
+      p {
+        &:nth-child(1) {
+          background-color: $green-bg;
+          color: $light-color;
+          width: 5rem;
+          text-transform: capitalize;
+          font-size: 0.875rem;
+          text-align: center;
+          border-radius: 0.125rem;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+          padding: 0.44rem 0.6rem 0.38rem 0.56rem;
+          position: absolute;
+          right: 1.35rem;
+          top: 1.35rem;
+          font-weight: 500;
+          font-family: $roboto;
+        }
       }
       img {
         height: 10rem;
@@ -137,7 +133,6 @@ section.fonctioning {
       }
       .card-text {
         gap: 0.31rem;
-
         h3 {
           font-weight: 700;
         }
@@ -148,15 +143,15 @@ section.fonctioning {
     }
   }
 }
-/* ****************************************************************footer************************************************************************ */
 
+/* ****************************************************************footer************************************************************************ */
 .footer {
   padding: 1.38rem 1.56rem;
-  background-color: #353535;
-  color: var(--White, #fff);
+  background-color: $verydark-grey;
+  color: $light-color;
   p.logo {
-    color: white;
-    font-family: "Shrikhand", serif;
+    color: $light-color;
+    font-family: $shri;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -164,7 +159,6 @@ section.fonctioning {
     z-index: 1;
     margin-bottom: 16px;
   }
-
   .txt {
     display: flex;
     flex-direction: column;
@@ -172,8 +166,16 @@ section.fonctioning {
   }
   .nav__wrapper {
     gap: 7px;
+    li {
+      img {
+        margin-right: 11px;
+      }
+    }
   }
-  .nav__wrapper li img {
-    margin-right: 11px;
+}
+
+@media screen and (max-width: 375px) {
+  section.fonctioning .wrapper-func .wrapper{
+    gap: 0.60rem!important;
   }
 }

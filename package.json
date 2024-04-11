@@ -1,0 +1,25 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "site menu restaurants",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/exp/style.css",
+    "minify": "sass --watch  ./assets/sass/main.scss --style compressed ./assets/css/min/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chloe-86/P3-responsive.git"
+  },
+  "keywords": [
+    "ohmyfood",
+    "restaurants",
+    "menu"
+  ],
+  "author": "chloe de rigal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chloe-86/P3-responsive/issues"
+  },
+  "homepage": "https://github.com/Chloe-86/P3-responsive#readme"
+}
