@@ -1,7 +1,68 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
+	
+	/*restaurants*/
 	.menu {
-		padding: 51px 210px 40px;
+		padding: 51px 110px 40px;
 		max-width: 1055px;
 		margin: -40px 193px 0;
 	}
+	.restaurants {
+		padding: 1.88rem 11.25rem;
+		>div {
+			grid-template-columns: repeat(2, 1fr) !important;
+			grid-gap: 6.25rem !important;
+		}
+	}
+	
+		section.fonctioning {
+			margin: 3rem 0 4.25rem 0;
+			padding: 2.03rem 11.25rem;
+		
+			.wrapper-func {
+				display: flex;
+				flex-direction: row!important;
+				justify-content: unset;
+				&:nth-child(1) {
+					img {
+						padding-left: 2.11rem;
+					}
+				}
+				&:nth-child(3) {
+					img {
+						padding-left: 2.36rem;
+					}
+				}
+				.wrapper {
+					width: 33% !important;
+					p {
+						text-wrap: unset;
+					}
+				}
+			}
+		}		
+}
+
+// corresponds au breakpoint desktop
+@media screen and (min-width: 1280px) {
+	// restaurants
+	.menu{
+		padding: 51px 210px 40px;
+	}
+/*pour la page index.html*/
+  section.fonctioning {
+	.wrapper-func {
+		gap: clamp(16px, 1vw, 36px) !important;
+		img {
+		  padding-left: 1vw !important;
+		}
+		.wrapper {
+			gap: 1vw !important;
+			padding: 1.76rem 1vw !important;
+			  p {
+				font-size: clamp(14px, 1vw, 16px);
+				text-wrap: nowrap;
+			  }
+			}
+	  }
+  }
 }

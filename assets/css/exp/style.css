@@ -95,13 +95,6 @@ header p.logo {
   }
   100% {
     transform: translateY(0px);
-  }
-}
-@keyframes opacityAnim {
-  0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
@@ -131,19 +124,18 @@ header p.logo {
 }
 
 .anim-block {
-  animation: opacityAnim 2s, translateY 2s;
-}
-
-.menu #anim-block1 {
-  animation-delay: 1s;
+  animation-name: translateY;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .menu #anim-block2 {
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 
 .menu #anim-block3 {
-  animation-delay: 3s;
+  animation-delay: 0.5s;
 } 
 @keyframes fill-anim {
   0% {
@@ -516,70 +508,15 @@ section.fonctioning .circle {
 }
 
 @media screen and (max-width: 375px) {
-  .functionning .wrapper {
+  section.fonctioning .wrapper-func .wrapper {
     gap: 0.6rem !important;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  /*pour la page index.html*/
-  section.fonctioning .wrapper-func {
-    gap: clamp(16px, 1vw, 36px) !important;
-  }
-  section.fonctioning .wrapper-func img {
-    padding-left: 1vw !important;
-  }
-  section.fonctioning .wrapper-func .wrapper {
-    gap: 1vw !important;
-    padding: 1.76rem 1vw !important;
-  }
-  section.fonctioning .wrapper-func .wrapper p {
-    font-size: clamp(14px, 1vw, 16px);
-    text-wrap: nowrap;
-  }
-  /* pour les page dossier restaurants: menu */
-  .menu {
-    padding: 51px 14.58vw 40px;
-    max-width: 1055px;
-    margin: -40px 13.4vw 0;
-  }
-}
 /* menu desktop */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   /***********************index.html*****************************/
   .header_city {
     box-shadow: unset !important;
-  }
-  section.fonctioning {
-    margin: 3rem 0 4.25rem 0;
-    padding: 2.03rem 11.25rem;
-  }
-  section.fonctioning .wrapper-func {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: unset;
-  }
-  section.fonctioning .wrapper-func:nth-child(1) img {
-    padding-left: 2.11rem;
-  }
-  section.fonctioning .wrapper-func:nth-child(2) img {
-    padding-left: 2.21rem;
-  }
-  section.fonctioning .wrapper-func:nth-child(3) img {
-    padding-left: 2.36rem;
-  }
-  section.fonctioning .wrapper-func .wrapper {
-    width: 33% !important;
-  }
-  section.fonctioning .wrapper-func .wrapper p {
-    text-wrap: unset;
-  }
-  /*restaurants*/
-  .restaurants {
-    padding: 1.88rem 11.25rem;
-  }
-  .restaurants > div {
-    grid-template-columns: repeat(2, 1fr) !important;
-    grid-gap: 6.25rem !important;
   }
   /*footer*/
   .footer p.logo {
@@ -605,11 +542,60 @@ section.fonctioning .circle {
     width: 130px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
+  /*restaurants*/
   .menu {
-    padding: 51px 210px 40px;
+    padding: 51px 110px 40px;
     max-width: 1055px;
     margin: -40px 193px 0;
+  }
+  .restaurants {
+    padding: 1.88rem 11.25rem;
+  }
+  .restaurants > div {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 6.25rem !important;
+  }
+  section.fonctioning {
+    margin: 3rem 0 4.25rem 0;
+    padding: 2.03rem 11.25rem;
+  }
+  section.fonctioning .wrapper-func {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: unset;
+  }
+  section.fonctioning .wrapper-func:nth-child(1) img {
+    padding-left: 2.11rem;
+  }
+  section.fonctioning .wrapper-func:nth-child(3) img {
+    padding-left: 2.36rem;
+  }
+  section.fonctioning .wrapper-func .wrapper {
+    width: 33% !important;
+  }
+  section.fonctioning .wrapper-func .wrapper p {
+    text-wrap: unset;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu {
+    padding: 51px 210px 40px;
+  }
+  /*pour la page index.html*/
+  section.fonctioning .wrapper-func {
+    gap: clamp(16px, 1vw, 36px) !important;
+  }
+  section.fonctioning .wrapper-func img {
+    padding-left: 1vw !important;
+  }
+  section.fonctioning .wrapper-func .wrapper {
+    gap: 1vw !important;
+    padding: 1.76rem 1vw !important;
+  }
+  section.fonctioning .wrapper-func .wrapper p {
+    font-size: clamp(14px, 1vw, 16px);
+    text-wrap: nowrap;
   }
 }
 
