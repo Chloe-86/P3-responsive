@@ -61,7 +61,7 @@ li {
   list-style-type: none;
 }
 
-header p.logo {
+header .logo {
   color: #000000;
   text-align: center;
   font-family: Shrikhand;
@@ -167,6 +167,7 @@ header p.logo {
   position: absolute;
   bottom: 1.56rem;
   right: 1.56rem;
+  cursor: pointer;
 }
 
 .logo-anim {
@@ -432,7 +433,6 @@ section.fonctioning .circle {
 .restaurants .card {
   grid-gap: 1.12rem;
   display: grid;
-  cursor: pointer;
 }
 .restaurants .card img {
   border-radius: 0.93rem 0.93rem 0 0;
@@ -512,7 +512,6 @@ section.fonctioning .circle {
     gap: 0.6rem !important;
   }
 }
-/* menu desktop */
 @media (min-width: 768px) {
   /***********************index.html*****************************/
   .header_city {
@@ -542,6 +541,7 @@ section.fonctioning .circle {
     width: 130px;
   }
 }
+/* menu desktop */
 @media screen and (min-width: 1024px) {
   /*restaurants*/
   .menu {
